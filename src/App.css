@@ -28,6 +28,11 @@ right: 20px;
 .threeDots:active {
   background: url("./asset/_Avatar\ share\ button.png");
 }
+
+.threeDots:hover {
+  cursor: pointer;
+}
+
 #profile_img:hover {
   background: url('./asset/Device=Web\,\ State=Hover.png') no-repeat center;
   cursor: pointer;
@@ -87,6 +92,11 @@ button p {
 
   .share:active {
     background: url("./asset/share_active.png") no-repeat cover;
+    cursor: pointer;
+  }
+
+  .share:hover {
+    background: url("./asset/share.png") no-repeat cover;
     cursor: pointer;
   }
   
