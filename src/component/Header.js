@@ -7,7 +7,7 @@ import '../App.css';
 export default function Header() {
   return (
     <div className='header'>
-        <img src={profilePic} alt="" id='profile_img'/>
+        <img src={profilePic} alt="" id='profile_img ' className='picture'/>
         <h2 id='twitter'>Patrick Akuagwu</h2>
         <h2 id='slack'>Patrick</h2>
         <img src={threeDots} alt="" className='threeDots'/>

@@ -33,7 +33,7 @@ right: 20px;
   cursor: pointer;
 }
 
-#profile_img:hover {
+.picture:hover {
   background: url('./asset/Device=Web\,\ State=Hover.png') no-repeat center;
   cursor: pointer;
 }
