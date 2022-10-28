@@ -1,23 +1,55 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "../src/component/Header"
+import Button from './component/Button';
+import Footer from './component/Footer';
+import icon from "./asset/Icon.png"
+import slack from "./asset/slack.png"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <div className='button-link'>
+      <Button 
+        dname="Twitter Link"
+        link="https://twitter.com/PAkuagwu"
+        id="twitter"
+      />
+      <Button 
+        dname="Zuri Team"
+        link="https://training.zuri.team/"
+        id="btn__zuri"
+        />
+      <Button 
+        dname="Zuri Books"
+        link=" http://books.zuri.team"
+        id="books"
+      />
+      <Button 
+        dname="Python Books"
+        link="https://books.zuri.team/python-for-beginners?ref_id=Patrick"
+        id="book__python"
+      />
+      <Button 
+        dname="Background Check for Coders"
+        link="https://background.zuri.team"
+        id="pitch"
+      />
+      <Button 
+        dname="Design Books"
+        link="https://background.zuri.team"
+        id="book__design"
+      />
+      </div>
+
+    <div className='logo'>
+      <img src={icon} alt="" />
+      <img src={slack} alt="" />
+
+    </div>
+      
+    <Footer />
     </div>
   );
 }
