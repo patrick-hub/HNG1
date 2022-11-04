@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
 .App {
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ gap: 20px;
 }
 
 .buttons {
-    width: 343px;
+    width: 375px;
     height: 60px;
     background: #EAECF0;
     border: 1px solid #EAECF0;
@@ -106,6 +106,10 @@ button p {
 
   .footer-section {
     width: 600px;
+  }
+
+  .form {
+    grid-row-gap: 10px;
   }
 }
 

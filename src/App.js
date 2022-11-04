@@ -4,13 +4,15 @@ import Button from './component/Button';
 import Footer from './component/Footer';
 import icon from "./asset/Icon.png"
 import slack from "./asset/slack.png"
+// import Contact from './component/Contact';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <div className='button-link'>
+      <div className='button-link container'>
       <Button 
         dname="Twitter Link"
         link="https://twitter.com/PAkuagwu"
@@ -41,6 +43,14 @@ function App() {
         link="https://background.zuri.team"
         id="book__design"
       />
+      
+      <Link to='Contact'>
+      <Button 
+        dname="Contact Me"
+        id="contact"
+      />
+      </Link>
+
       </div>
 
     <div className='logo'>
@@ -48,7 +58,7 @@ function App() {
       <img src={slack} alt="" />
 
     </div>
-      
+    
     <Footer />
     </div>
   );
