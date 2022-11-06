@@ -46,7 +46,7 @@ function App() {
       <Button 
         dname="Contact Me"
         id="contact"
-        link="/Contact"
+        link="/contact"
       />
 
       </div>

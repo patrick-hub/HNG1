@@ -1,14 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
-import Contact from "./Contact";
+import Contact from "./contact";
 
 function Home () {
   return (
 
     <Routes>
         <Route path='/' element={<App />}></Route>
-        <Route path='/Contact' element={<Contact />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
 
     </Routes>
   )

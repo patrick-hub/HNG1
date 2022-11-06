@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 
-export default function Contact() {
+export default function contact() {
 
 
   return <div className="container mt-5">
