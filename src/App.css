@@ -77,6 +77,31 @@ button p {
   width: 300px;
 }
 
+.input_text {
+  outline: none;
+ 
+}
+
+.input_text:focus {
+  border: 1px solid #84CAFF;
+  outline: none;
+box-shadow: none;
+
+}
+
+.message_btn:disabled {
+  background-color: #B2DDFF;
+  ;
+}
+
+.message_btn:hover {
+  background-color: #175CD3;
+}
+
+.message_btn:focus {
+  border: 2px solid #1570EF;
+
+}
 @media screen and (min-width: 700px) {
   .threeDots {
     display: none;
