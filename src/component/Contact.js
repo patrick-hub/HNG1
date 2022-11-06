@@ -9,7 +9,7 @@ export default function contact() {
     <h2 className="d-flex justify-content-start mx-2">Contact Me</h2>
     <p className="d-flex justify-content-start mx-3">Hi there, contact me to ask me about anything you have in mind.</p>
 
-    <form className="container row g-3 form">
+    <form className="container contact-form row g-3 form">
   <div className="col-md-6">
     <label htmlFor="first_name" className="form-label d-flex justify-content-start">First Name</label>
     <input type="text" className="form-control input_text mb-3" id="first_name" placeholder="Enter your first name" required/>
@@ -34,6 +34,8 @@ export default function contact() {
 
   <div className="col-12">
     <div className="form-check d-flex justify-content-start ">
+    <div className="checkbox"></div>
+    <div className="check"></div>
       <input className="form-check-input" type="checkbox" id="gridCheck" />
       <label className="form-check-label mb-3" htmlFor="gridCheck">
       You agree to providing your data to patrick who may contact you

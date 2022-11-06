@@ -96,11 +96,61 @@ box-shadow: none;
 
 .message_btn:hover {
   background-color: #175CD3;
+  cursor: pointer;
 }
 
 .message_btn:focus {
   border: 2px solid #1570EF;
 
+}
+
+.contact-form .checkbox {
+  display: block;
+  position: relative;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid var(--profile);
+  border-radius: 5px;
+}
+.check:focus {
+  box-shadow: 1px 1px 10px #84CAFF, -1px -1px 10px #84CAFF;
+}
+.check:disabled{
+  background-color: var(--share);
+}
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox input:checked ~ .check:after {
+  display: block;
+}
+.checkbox .check:after {
+  left: 6px;
+  top: 0;
+  width: 5px;
+  height: 10px;
+  border: solid var(--button);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 @media screen and (min-width: 700px) {
   .threeDots {
