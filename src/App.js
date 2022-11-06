@@ -4,8 +4,7 @@ import Button from './component/Button';
 import Footer from './component/Footer';
 import icon from "./asset/Icon.png"
 import slack from "./asset/slack.png"
-// import Contact from './component/Contact';
-import { Link } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -43,13 +42,12 @@ function App() {
         link="https://background.zuri.team"
         id="book__design"
       />
-      
-      <Link to='Contact'>
+  
       <Button 
         dname="Contact Me"
         id="contact"
+        link="/Contact"
       />
-      </Link>
 
       </div>
 
